@@ -1,0 +1,208 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.App{
+  width: 100%;
+  height: 92vh;
+  background-image: url("./imgs/happy-young-couple-field-spring.jpg");
+  /* background-position: 35% 100%; */
+background-size: 100% 100%;
+position: relative;
+}
+nav {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  
+  margin: 12px 17px;
+
+  border-radius: 50px;
+  box-shadow: 18px 8px 7px;
+  
+ 
+}
+img{
+  width: 20px;
+  height: 20px;
+  
+}
+.ty{
+  display: flex;
+  justify-content: center;
+  color: red;
+  position: relative;
+}
+li{
+  
+}
+nav ul li .k {
+  color: #0f8a38;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 1rem;
+  background-color: black;
+  background-color: #009688;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+
+}
+.fg{
+ position: absolute; 
+ top: 13%;
+ left: 72%;
+}
+input{
+ /* position: absolute;
+ left: 2%; */
+ width: 100%;
+ height: 35px;
+  border-radius: 25px;
+  padding-left: 28%;
+
+
+}
+.h{
+  position: absolute;
+  top: 9px;
+  left: 8px;
+  z-index: 2;
+}
+nav ul li .k:hover{
+  color: red;
+  background-color: #fff;
+  color: #009688;
+  border: 2px solid #009688;
+
+
+
+}
+.n{
+position: absolute;
+top: 38%;
+width: 300px;
+background-color: aquamarine;
+height: 20%;
+border-radius: 30px;
+padding: 10px;
+}
+.ui{
+  width: 100%;
+  height: 500px;
+  background-color:yellow ;
+  position: absolute;
+  top: 100%;
+}
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.chil{
+  width: 200px;
+  
+  background-color: #0f8a38;
+}
+.kl {
+  width: 200px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  border: 1px solid black;
+  position: relative;
+}
+
+/* .kl::before {
+ 
+} */
+
+.kl:has(+.btn:checked) {
+  display: flex;
+}
+
+.kl:has(+.btn:not(:checked))::before {
+
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 100%;
+  bottom: 0;
+  pointer-events: none;
+  background: linear-gradient(to bottom, transparent, white);
+}
+
+.btn {
+  appearance: none;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  /* width: 10px;
+  height: 10px; */
+  border: 1px solid black;
+}
+
+.btn::before {
+  content: "Read more";
+
+}
+
+.btn:checked:before {
+  content: "Read less";
+
+}
+@media (min-width:315px)and (max-width:500px) {
+
+  .n{
+   
+    width: 220px;
+ 
+    }
+    nav ul li .k {
+  
+      font-size: 0.45rem;
+      height: 35%;
+    
+    }
+    input{
+      width: 89%;
+      height: 30px;
+    }
+}
+@media (max-width:315px){
+  input{
+    position: static;
+  }
+  .n{
+   
+    width: 220px;
+ 
+    }
+    nav ul li .k {
+  
+      font-size: 0.45rem;
+      height: 35%;
+    
+    }
+    input{
+      width: 89%;
+      height: 30px;
+    }
+}
